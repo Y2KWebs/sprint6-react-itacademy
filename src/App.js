@@ -1,10 +1,15 @@
 import Book from "./components/book";
-function App() {
+import data from "./data/frases.json";
+import "./App.css";
+
+const App = () => {
   return (
-    <div>
-      <Book valor="Viatge a la lluna" />
+    <div className="App">
+      {data.map((e) => (
+        <Book title={e.title} author={e.author} />
+      ))}
     </div>
   );
-}
+};
 
 export default App;
