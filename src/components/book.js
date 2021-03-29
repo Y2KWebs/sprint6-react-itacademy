@@ -1,1 +1,1 @@
-export default () => <>Viatge a la lluna</>;
+export default (props) => props.valor;

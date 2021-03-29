@@ -2,7 +2,7 @@ import Book from "./components/book";
 function App() {
   return (
     <div>
-      <Book />
+      <Book valor="Viatge a la lluna" />
     </div>
   );
 }
